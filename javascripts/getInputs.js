@@ -31,7 +31,7 @@ function processFormData()
 	  error_message += 'Please select a background color\n';
 	  error_flag = true;
   } else {
-      document.getElementById('myData').innerHTML = name;
+      document.getElementById('myData').innerHTML += name;
   }
   if(error_flag) {
 	  alert(error_message);
