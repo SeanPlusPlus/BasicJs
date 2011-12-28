@@ -2,24 +2,6 @@ function trim(str) {
   return str.replace(/^\s+|\s+$/g, '');
 }
 
-function toggleFormVisibility()
-{
-  var frm_element = document.getElementById('msg_frm');
-  var sub_link_element = document.getElementById('sub');
-  var nosub_link_element = document.getElementById('nosub');
-  var vis = frm_element.style;
-
-  if(vis.display=='' || vis.display=='none') {
-	  vis.display = 'block';
-	  sub_link_element.style.display='none';
-	  nosub_link_element.style.display='';
-  } else {
-	  vis.display = 'none';
-	  sub_link_element.style.display='block';
-	  nosub_link_element.style.display='none';
-  }
-}
-
 function processFormData()
 {
   var name_element = document.getElementById('myMsg');

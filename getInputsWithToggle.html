@@ -3,7 +3,7 @@
 <html xmlns='http://www.w3.org/1999/xhtml'>
 <head>
     <title>JavaScript Message Example</title>
-    <script script type="text/javascript" src="javascripts/getInputs.js"></script>
+    <script script type="text/javascript" src="javascripts/getInputsWithToggle.js"></script>
     <style type="text/css">
       p, form{
         font-size:14px;
@@ -22,11 +22,15 @@
 
 <div>
   <h3>Basic JavaScript Message</h3>
-  <form name ="backgroundColor" id="msg_frm" action="#">
+  <a href="javascript:toggleFormVisibility();" id="sub"><p>Show Form</p></a>
+  <form name ="backgroundColor" id="msg_frm" action="#" style="display: none">
     <div>
       <p><label for="name">Msg: </label><input type="text" name="name" id="myMsg" /></p>
       <p><input type="button" name="submit" value="submit" onclick="processFormData();" /></p>
     </div>
+    <a href="javascript:toggleFormVisibility();" id="nosub" style="display: none">
+      <p>Hide Form</p>
+    </a>
   </form>
 <div>
 
