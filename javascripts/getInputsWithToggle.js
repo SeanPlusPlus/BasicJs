@@ -28,7 +28,7 @@ function processFormData()
   var error_flag = false;
 
   if(name == '') {
-	  error_message += 'Please select a background color\n';
+	  error_message += 'Please enter a message\n';
 	  error_flag = true;
   } else {
       document.getElementById('myData').innerHTML += name;
